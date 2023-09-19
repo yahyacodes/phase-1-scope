@@ -126,13 +126,13 @@ num1 * num2;
 > > The function body creates its own scope. It's like a separate channel on Slack
 > > — only the members of that channel can read the messages sent in it.
 
-> > In addition, variables declared with _let_ or _const_ can belong to an additional scope:
+> > In addition, variables declared with **let** or **const** can belong to an additional scope:
 
 - Block scope: The scope created with a pair of curly braces (a block).
 
-**Block scope** is a type of scope in JavaScript that defines the _visibility_ and _accessibility_ of
+**Block scope** is a type of scope in JavaScript that defines the **visibility** and **accessibility** of
 **variables** and **functions** within a specific block of code. A block of code is typically enclosed
-within curly braces _{}_. Variables declared with _let_ and _const_, introduced in _ECMAScript 6 (ES6)_,
+within curly braces **{}**. Variables declared with **let** and **const**, introduced in **ECMAScript 6 (ES6)**,
 have block scope, <!-- meaning they are only accessible within the block where they are defined. -->
 
 - Variables declared with `const` and `let` **are** block-scoped:
@@ -147,10 +147,10 @@ console.log(blockScopedVar); // This will result in an error because
 // blockScopedVar is not defined in the outer scope
 ```
 
-In this example, **blockScopedVar** is declared within the _if_ block, so it has *block scope *and is only
+In this example, **blockScopedVar** is declared within the **if** block, so it has **block scope** and is only
 accessible within that block. Attempting to access it outside the block will result in an error.
 
-- Variables declared with `var` are \*\*not\*\* block-scoped:
+- Variables declared with `var` are **not** block-scoped:
 
 ```js
 if (true) {
@@ -206,12 +206,12 @@ secretPassword;
 // => "il0v3pupp135"
 ```
 
-The global variable named _secretPassword_ was accidentally created within the
+The global variable named **secretPassword** was accidentally created within the
 `bankAccount` function due to a missing `var`, `let`, or `const` keyword when declaring it. This resulted
 in `secretPassword` becoming accessible from **anywhere** in the code, even outside the function. Consequently,
 after invoking `bankAccount()`, the variable retained the value `il0v3pupp135` and could be accessed globally,
 potentially leading to unintended side effects and naming conflicts. It's a best practice to explicitly scope
-variables using `var`, `let`, or `const` to prevent accidental **global variable** creation and maintain code predictability.
+variables using `var`, `let`, or `const` to prevent accidental \*\*global variable\*\* creation and maintain code predictability.
 
 ## Conclusion
 
@@ -245,5 +245,7 @@ limiting access. So, to sum up our tricks for taming the scope monster:
 - MDN
   - [Scope](https://developer.mozilla.org/en-US/docs/Glossary/scope)
   - [Functions — Function scope](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#Function_scope)
+- W3Schools
   - [JavaScript-Scope](https://www.w3schools.com/js/js_scope.asp)
+- FreeCodeCamp
   - [Scope-and-Closures-in-javaScript](https://www.freecodecamp.org/news/scope-and-closures-in-javascript/)
