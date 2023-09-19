@@ -218,17 +218,11 @@ variables using `var`, `let`, or `const` to prevent accidental \*\*global variab
 Scope in programming defines the visibility and accessibility of variables and functions within code.
 In JavaScript, there are mainly three types of scope:
 
-1. Global Scope: Variables declared outside of functions are in the global scope and are accessible
+1. Global Scope: Variables declared outside of functions are in the global scope and are accessible from anywhere in the code.
 
-- from anywhere in the code.
+1. Function Scope: Variables declared inside a function are in function scope and are accessible only within that function.
 
-2. Function Scope: Variables declared inside a function are in function scope and are accessible
-
-- only within that function.
-
-3. Block Scope: Introduced with let and const in ES6, variables declared within blocks (e.g., within curly braces {})
-
-- have block scope, limiting their visibility to that block.
+1. Block Scope: Introduced with let and const in ES6, variables declared within blocks (e.g., within curly braces {}) have block scope, limiting their visibility to that block.
 
 Understanding scope is crucial for managing variable lifetimes and preventing naming conflicts. Properly scoped
 variables and functions enhance code **readability** and **maintainability** by encapsulating functionality and
